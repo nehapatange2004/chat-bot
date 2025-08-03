@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@plugin [daisyui] {
+  themes: all;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.model-text table {
+  /* border-collapse: collapse; */
+  width: auto;
+  border-radius: 20px;
+  overflow-x: auto;
+  font-size: 0.75rem;
+}
+
+.model-text td,
+th {
+  border-radius: 20px;
+  padding: 4px 8px; /* Essential for visual spacing around content */
+  text-align: left; /* Or center, right as per your table design */
+  vertical-align: top; /* Align content to top for multi-line cells */
+/* max-width: 2px; */
+max-width: 400px;
+/* background-color: #ba33f0; */
+  border: 0.5px solid rgb(145, 145, 145);
+  /* --- The primary CSS for "shrink to fit" --- */
+  /* This prevents text from wrapping within the cell, forcing the column to expand */
+  /* white-space-collapse: preserve-spaces; */
+  white-space: wrap;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+ 
+}
+
+textarea{
+  resize: none;
+}
